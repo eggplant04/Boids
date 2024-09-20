@@ -1,14 +1,2 @@
-﻿  AIE_Starter.cpp
-C:\Users\s233179\Documents\GitHub\Boids\packages\raylib.4.0.0.7\build\native\include\raygui.h(3273,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s233179\Documents\GitHub\Boids\packages\raylib.4.0.0.7\build\native\include\raygui.h(3274,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  AlignBehaviour.cpp
-  AvoidBehaviour.cpp
-  Boid.cpp
-C:\Users\s233179\Documents\GitHub\Boids\AIE_Starter\Boid.cpp(20,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\s233179\Documents\GitHub\Boids\AIE_Starter\Boid.cpp(20,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\s233179\Documents\GitHub\Boids\AIE_Starter\Boid.cpp(35,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  CohesionBehaviour.cpp
-  SeparateBehaviour.cpp
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿  UtilityAI.cpp
   AIE_Starter.vcxproj -> C:\Users\s233179\Documents\GitHub\Boids\x64\Debug\AIE_Starter.exe

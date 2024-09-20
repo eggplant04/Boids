@@ -57,7 +57,6 @@ int main(int argc, char* argv[])
 
 	// Boids
     //--------------------------------------------------------------------------------------
-    std::vector<UtilityAI::Boid*> boids;
 
     //--------------------------------------------------------------------------------------
     float time = (float)GetTime();
@@ -88,10 +87,10 @@ int main(int argc, char* argv[])
         if (IsMouseButtonPressed(0))
         {
             Vector2 mousePos = GetMousePosition();
-            boids.emplace_back(new UtilityAI::Boid(mousePos, RED, utilityAI));
+            utilityAI->AddBoid(new UtilityAI::Boid(mousePos, RED, utilityAI));
         }
 
-        for (UtilityAI::Boid* boid : boids)
+        for (UtilityAI::Boid* boid : utilityAI->GetBoids())
         {
             boid->Update(deltaTime);
         	boid->Draw();

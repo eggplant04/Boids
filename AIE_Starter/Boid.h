@@ -20,6 +20,7 @@ namespace UtilityAI
 
 		void Update(float _dt);
 		void Draw();
+		void ApplyForce(Vector2 _force);
 
 		std::vector<Boid*> GetNearbyBoids(std::vector<Boid*>& allBoids, float radius);
 

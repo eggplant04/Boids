@@ -1,5 +1,7 @@
 #include "UtilityAI.h"
 
+#include <iostream>
+
 UtilityAI::UtilityAI::~UtilityAI()
 {
 	for (Behaviour* b : m_behaviours)
@@ -8,13 +10,13 @@ UtilityAI::UtilityAI::~UtilityAI()
 	}
 }
 
-void UtilityAI::UtilityAI::Update(Boid* _boid, float _dt)
+void UtilityAI::UtilityAI::Update(Boid* _boid, float _dt, std::vector<Boid*> _boids)
 {
 	float bestEval = 0;
 	Behaviour* newBehaviour = nullptr;
 	for (Behaviour* b : m_behaviours)
 	{
-		float eval = b->Evaluate(_boid);
+		float eval = b->Evaluate(_boid, m_boids);
 		if (eval > bestEval)
 		{
 			bestEval = eval;
@@ -40,4 +42,9 @@ void UtilityAI::UtilityAI::Update(Boid* _boid, float _dt)
 void UtilityAI::UtilityAI::AddBehaviour(UtilityAI::Behaviour* _behaviour)
 {
 	m_behaviours.emplace_back(_behaviour);
+}
+
+void UtilityAI::UtilityAI::AddBoid(Boid* _boid)
+{
+	m_boids.emplace_back(_boid);
 }
