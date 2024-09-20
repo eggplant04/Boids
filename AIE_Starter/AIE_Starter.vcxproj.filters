@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\UtilityAI">
+      <UniqueIdentifier>{74ed8d9c-a72e-45a2-a818-13fe974d5cce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UtilityAI">
+      <UniqueIdentifier>{c3b173d3-d05e-4a37-bf07-ab7902059d7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AIE_Starter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Boid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityAI.cpp">
+      <Filter>Source Files\UtilityAI</Filter>
+    </ClCompile>
+    <ClCompile Include="SeparateBehaviour.cpp">
+      <Filter>Source Files\UtilityAI</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignBehaviour.cpp">
+      <Filter>Source Files\UtilityAI</Filter>
+    </ClCompile>
+    <ClCompile Include="AvoidBehaviour.cpp">
+      <Filter>Source Files\UtilityAI</Filter>
+    </ClCompile>
+    <ClCompile Include="CohesionBehaviour.cpp">
+      <Filter>Source Files\UtilityAI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Boid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>Header Files\UtilityAI</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>Header Files\UtilityAI</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityAI.h">
+      <Filter>Header Files\UtilityAI</Filter>
+    </ClInclude>
+    <ClInclude Include="SeparateBehaviour.h">
+      <Filter>Header Files\UtilityAI</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignBehaviour.h">
+      <Filter>Header Files\UtilityAI</Filter>
+    </ClInclude>
+    <ClInclude Include="AvoidBehaviour.h">
+      <Filter>Header Files\UtilityAI</Filter>
+    </ClInclude>
+    <ClInclude Include="CohesionBehaviour.h">
+      <Filter>Header Files\UtilityAI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
